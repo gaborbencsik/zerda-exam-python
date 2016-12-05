@@ -39,9 +39,10 @@ class SpaceX:
 
     def refill_all(self):
         for rocket in self.spacex_rockets:
+            rocket.refill()
             used_fuel = rocket.refill()
             self.stored_fuel -= used_fuel
-            return
+            return used_fuel
 
     def launch_all(self):
         for rocket in self.spacex_rockets:
@@ -52,7 +53,7 @@ class SpaceX:
         self.stored_fuel += amount
 
     def getStats(self):
-        return "rockets: {}, fuel: {}, launches: {}".format(len(self.spacex_rockets), self.stored_fuel, self.all_launch)
+        return "rockets: {}, fuel: {}, launches: {}".format(len(self.spacex_rockets), self.stored_fuel, self.all_launch+1)
 
 
 
