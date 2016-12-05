@@ -27,10 +27,22 @@ The application is accepted if:
 ### Explain the algorithm seen in `third.py`. Use a flowchart, structogram or pseudo code. [2p]
 #### Your answer:
 
+Expecting two parameters.
+  if the first parameter is not a string:
+    the function returns zero
+  otherwise go through the string with a for loop:
+    if one of the letters are equal to the given letter:
+      increment count with one
+  the function returns the amound of matches when the loop ends
+
 ### How can you create a graphical user interface and draw a rectangle on it in python? What are the tools needed for it? [2p]
 #### Your answer:
+
+One of the optional tool is to use TkInter. There are built-in functions for creating a canvas and also for creating a rectangle:
+    canvas = Canvas(root, width, height)
+    canvas.create_rectangle(x0, y0, x1, y1, ... )
 
 ### What does V stand for in MVC? [2p]
 #### Your answer:
 
-"V" represents View.
+"V" represents View. The View is responsible for displaying the output information of the program. View is controlled by the Controller (so the Controller tells it what to do and when).
