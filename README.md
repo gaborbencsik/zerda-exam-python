@@ -32,3 +32,5 @@ The application is accepted if:
 
 ### What does V stand for in MVC? [2p]
 #### Your answer:
+
+"V" represents View.
