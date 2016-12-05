@@ -39,8 +39,9 @@ class SpaceX:
 
     def refill_all(self):
         for rocket in self.spacex_rockets:
-            rocket.refill()
-            self.stored_fuel -= rocket.refill()
+            used_fuel = rocket.refill()
+            self.stored_fuel -= used_fuel
+            return
 
     def launch_all(self):
         for rocket in self.spacex_rockets:
