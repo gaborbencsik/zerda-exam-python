@@ -45,8 +45,7 @@ class SpaceX:
             return used_fuel
 
     def launch_all(self):
-        for rocket in self.spacex_rockets:
-            rocket.launch()
+        for _ in self.spacex_rockets:
             self.all_launch += 1
 
     def buy_fuel(self, amount):
